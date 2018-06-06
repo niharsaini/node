@@ -44,7 +44,7 @@ if(stats.isFile()) {
     var fileStream = fs.createReadStream(fileName);
     fileStream.pipe(res);
 }
-else if(atats.isDirectory()) {
+else if(stats.isDirectory()) {
     res.writeHead(302, {
         'Location': 'index.html'
     });
